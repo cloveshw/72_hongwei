@@ -10,7 +10,7 @@ def zoom_image(image,dst_width,dst_height):
     new_image = np.zeros([dst_width, dst_height, image.shape[2]], np.uint8)
     for dst_i in range(dst_width):
         for dst_j in range(dst_height):
-            print("dst_i=:%d,dst_j=:%d"%(dst_i,dst_j))
+            # print("dst_i=:%d,dst_j=:%d"%(dst_i,dst_j))
             src_i = max(((dst_i+0.5)*src_width/dst_width)-0.5,0)
             src_j = max(((dst_j+0.5)*src_height/dst_height)-0.5,0)
             FQ11 = image[int(src_i),int(src_j)]

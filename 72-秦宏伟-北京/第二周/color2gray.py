@@ -30,12 +30,19 @@ if __name__ == '__main__':
     image_gray = color2gray(B,G,R)
     image_bit = cloor2bit(B,G,R)
 
-    plt.imshow(image_gray,cmap='gray')
-    plt.axis('off')
-    plt.show()
+    # plt.imshow(image_gray,cmap='gray')
+    # plt.axis('off')
+    # plt.show()
+    #
+    # plt.imshow(image_bit, cmap='gray')
+    # plt.axis('off')
+    # plt.show()
 
+    plt.figure()
+    plt.subplot(1,2,1)
     plt.imshow(image_bit, cmap='gray')
-    plt.axis('off')
+    plt.subplot(1, 2, 2)
+    plt.imshow(image_gray, cmap='gray')
     plt.show()
 
     cv.namedWindow('input_image', cv.WINDOW_AUTOSIZE)
