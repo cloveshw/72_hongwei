@@ -79,8 +79,6 @@ def main(data,label):
     top_index = sort_index[:k]
     #获取前k个特征向量
     top_det = det_v[:,top_index]
-    #对top_det进行矩阵转置，将N*2转置为2*N
-    # top_det_T = np.transpose(top_det)
     #对特征向量和输入矩阵做卷积
     result = np.dot(data,top_det)
 
