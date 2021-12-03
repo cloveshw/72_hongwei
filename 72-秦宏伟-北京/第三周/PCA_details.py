@@ -47,7 +47,6 @@ def det(cov_matrix):
     det_w,det_v = np.linalg.eig(cov_matrix)
     return det_w,det_v
 
-
 """
 矩阵中心化
 """
